@@ -18,7 +18,7 @@ public class NewAndUsedCarSearchPage extends Utility {
 
     @CacheLookup
     @FindBy(xpath = "//select[@id='makes']")
-    WebElement anyMake;
+    WebElement carMake;
 
     @CacheLookup
     @FindBy(xpath = "//select[@id='models']")
@@ -42,7 +42,7 @@ public class NewAndUsedCarSearchPage extends Utility {
 
 
     public void selectCarMake(String make) {
-        selectByVisibleTextFromDropDown(anyMake, make);
+        selectByVisibleTextFromDropDown(carMake, make);
     }
 
     public void selectModel(String model) {
